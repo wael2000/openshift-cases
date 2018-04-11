@@ -14,7 +14,7 @@ public class GreeterBean implements Greeter {
     try{
             return "Hello " + user + ", have a pleasant day! from EJB running on " + java.net.InetAddress.getLocalHost().getHostAddress();
       } catch(java.net.UnknownHostException exp){
-            return ""Hello " + user + ", have a pleasant day! no IP!!!";
+            return "Hello " + user + ", have a pleasant day! but no IP.";
       }
   }
 }
