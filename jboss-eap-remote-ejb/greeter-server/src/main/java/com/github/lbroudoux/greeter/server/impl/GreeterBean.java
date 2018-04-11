@@ -11,6 +11,10 @@ public class GreeterBean implements Greeter {
 
   @Override
   public String greet(String user) {
-    return "Hello " + user + ", have a pleasant day! from EJB running on " + java.net.InetAddress.getLocalHost().getHostAddress();
+    try{
+            return "Hello " + user + ", have a pleasant day! from EJB running on " + java.net.InetAddress.getLocalHost().getHostAddress();
+      } catch(java.net.UnknownHostException exp){
+            return ""Hello " + user + ", have a pleasant day! no IP!!!";
+      }
   }
 }
