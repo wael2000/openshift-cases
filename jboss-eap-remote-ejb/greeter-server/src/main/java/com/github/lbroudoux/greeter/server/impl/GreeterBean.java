@@ -11,6 +11,6 @@ public class GreeterBean implements Greeter {
 
   @Override
   public String greet(String user) {
-    return "Hello " + user + ", have a pleasant day!";
+    return "Hello " + user + ", have a pleasant day! from EJB running on " + java.net.InetAddress.getLocalHost().getHostAddress();
   }
 }
