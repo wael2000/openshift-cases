@@ -97,12 +97,14 @@
         <scope>provided</scope>
     </dependency>
 
+    <!-- distribute the jar
     <dependency>
         <groupId>com.github.lbroudoux.greeter</groupId>
         <artifactId>greeter-server</artifactId>
         <version>${project.version}</version>
         <classifier>interface</classifier>
     </dependency>
+    -->
 
     <!-- Test related dependencies -->
     <dependency>
