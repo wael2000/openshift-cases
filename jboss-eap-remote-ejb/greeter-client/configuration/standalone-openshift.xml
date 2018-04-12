@@ -542,7 +542,7 @@
         </outbound-socket-binding>
         <!-- LBR: new outbound socket binding for remote EJB calls -->
         <outbound-socket-binding name="remote-greeting-ejb">
-            <remote-destination host="${greeting.server.host}" port="4447"/>
+            <remote-destination host="${greeting_server_host}" port="4447"/>
         </outbound-socket-binding>
     </socket-binding-group>
 </server>
